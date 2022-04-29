@@ -1,0 +1,15 @@
+import graphstats from './graphstats.png'
+import settings from './settings.png'
+import building from './building.png'
+import calls from './calls.png'
+import carco from './carco.png'
+import cash from './cash.png'
+import directions from './directions.png'
+import dollar from './dollar.png'
+import edu from './edu.png'
+import family from './family.png'
+import hr from './hr.png'
+import mobile from './mobile.png'
+import stuck from './stuck.png'
+
+export { graphstats, hr, mobile, stuck, settings, building, calls, carco, cash, directions, dollar, edu, family }

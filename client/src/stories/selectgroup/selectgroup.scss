@@ -1,0 +1,10 @@
+.select-group {
+  @apply relative w-full;
+
+  span {
+    @apply absolute top-0 bg-white text-button-disable transform scale-75 z-0 ml-2 px-1 py-0;
+
+    transform: translateY(-0.75rem) translateX(-8%) scale(0.75);
+    z-index: 1;
+  }
+}

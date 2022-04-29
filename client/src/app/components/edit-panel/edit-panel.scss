@@ -1,0 +1,33 @@
+.edit-panel {
+  @apply mt-14 pl-5 pt-14 pr-5 fixed top-0 bg-white shadow-main-card;
+
+  z-index: 2;
+  right: 4.625rem;
+  width: 28.313rem;
+  height: calc(100vh - 3.5rem);
+
+  &--tab {
+    @apply text-sm mt-2 pt-3 pb-3 text-main-black font-medium mr-7 border-b-2 border-white transition-all;
+
+    &_active {
+      @apply border-main-blue;
+    }
+  }
+
+  &--card {
+    @apply mb-5 rounded-lg border transition-all;
+
+    width: 25rem;
+    min-height: 4.063rem;
+
+    &--header {
+      @apply flex items-center justify-between cursor-pointer w-full;
+
+      height: 4.063rem;
+    }
+
+    &--content {
+      @apply relative;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.group-button {
+  @apply border flex relative items-center justify-center mr-6 pl-5 pr-5 transition-all font-semibold text-xs;
+
+  min-width: 8rem;
+  height: 2.8rem;
+
+  &--active {
+    border-color: #1805db;
+    color: #1805db;
+  }
+}
+
+.group-input {
+  @apply border pl-2.5 transition-all;
+
+  width: 25.5rem;
+  height: 2.8rem;
+
+  &:hover {
+    border-color: #1805db;
+  }
+
+  &:focus {
+    border-color: #1805db;
+  }
+}
+
+.bloom-footer {
+  @apply mb-10 flex items-center justify-end;
+
+  width: 75%;
+}

@@ -1,0 +1,30 @@
+.sibilling-card {
+  @apply mb-8 ml-2 rounded-lg pl-12 mr-8 pt-5 shadow-scholarship-card;
+
+  width: 20.938rem;
+  height: 9.375rem;
+
+  span {
+    @apply text-gray-500;
+  }
+
+  &-row {
+    @apply flex justify-between;
+  }
+
+  &-add {
+    @apply flex items-center justify-center flex-col pr-12 pb-7 cursor-pointer text-gray-500 select-none;
+
+    span {
+      @apply font-semibold;
+    }
+  }
+
+  &-input {
+    padding-right: 1.875rem;
+  }
+
+  &-fix {
+    right: 0.594rem;
+  }
+}

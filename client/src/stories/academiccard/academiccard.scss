@@ -1,0 +1,23 @@
+.term-box {
+  @apply text-white w-80 pl-8 pt-2 pb-2 ml-1 rounded-md;
+
+  &_name {
+    @apply text-sm font-bold leading-18px;
+  }
+
+  &_date {
+    @apply text-sm leading-18px;
+  }
+
+  &_green {
+    background: linear-gradient(to right, #008060 80%, #00e6ac 70%);
+  }
+
+  &_blue {
+    background: linear-gradient(to right, #1890ff 80%, #d0f2ff 70%);
+  }
+
+  &_yellow {
+    background: linear-gradient(to right, #ffc107 80%, #fff7cd 70%);
+  }
+}

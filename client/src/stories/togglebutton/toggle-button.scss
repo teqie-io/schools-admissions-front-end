@@ -1,0 +1,52 @@
+.toggle-button {
+  @apply flex;
+
+  &-label {
+    @apply cursor-pointer;
+
+    .full-area {
+      @apply block  rounded-full transition;
+      background: #babec3;
+
+      &-medium {
+        @apply w-14 h-8;
+      }
+
+      &-small {
+        @apply w-8 h-5;
+      }
+
+      &-smalling {
+        @apply w-6 h-4 ml-1;
+      }
+    }
+
+    .disabled {
+      cursor: not-allowed;
+    }
+  }
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+input:checked ~ .full-area {
+  background: #404eed;
+}
+
+.dot {
+  @apply absolute left-1 top-1 bg-white rounded-full transition;
+
+  &-medium {
+    @apply w-6 h-6;
+  }
+
+  &-small {
+    @apply w-3 h-3;
+  }
+
+  &-smalling {
+    @apply w-2 h-2 ml-1;
+  }
+}

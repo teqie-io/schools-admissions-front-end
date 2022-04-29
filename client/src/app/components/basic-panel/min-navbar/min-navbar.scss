@@ -1,0 +1,56 @@
+.panel-min-navbar {
+  @apply block ml-0 text-main-black;
+
+  height: 35.1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  img {
+    @apply mr-2;
+  }
+
+  &_link {
+    @apply flex mb-4 z-10 rounded-xl text-second-gray text-base items-center not-italic font-medium leading-4 tracking-normal text-left;
+
+    transition: 0.2s ease;
+    width: 2.75rem;
+    height: 2.188rem;
+
+    img {
+      margin-left: 0.63rem;
+    }
+
+    &:hover {
+      @apply text-main-black bg-main-white;
+    }
+
+    &-active {
+      @apply text-main-black;
+      background: rgba(0, 171, 85, 0.1);
+    }
+  }
+}
+
+@media screen and (min-height: 860px) {
+  .panel-min-navbar {
+    height: 42rem;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .panel-min-navbar {
+    height: 32.75rem;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  .panel-min-navbar {
+    height: 26.75rem;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .panel-min-navbar {
+    height: 22.75rem;
+  }
+}

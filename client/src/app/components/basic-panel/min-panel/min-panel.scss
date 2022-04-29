@@ -1,0 +1,40 @@
+.panel-min {
+  @apply h-screen flex items-center flex-col pl-0 fixed bg-white z-20 border-r border-main-gray;
+
+  width: 4.625rem;
+
+  &-logo {
+    @apply mr-0.5 h-12 rounded-full items-center flex mt-1.5 mb-3;
+
+    width: 3.625rem;
+  }
+
+  &-menu {
+    @apply mb-4 flex pl-1 justify-around items-center rounded-18px;
+
+    &_campus {
+      @apply h-14 w-14 absolute;
+
+      background: rgba(0, 171, 85, 0.1);
+      bottom: 0.313rem;
+    }
+
+    &_profile {
+      @apply w-14 h-14 mb-5 bg-main-white cursor-pointer;
+    }
+
+    &_avatar {
+      @apply inline-block ml-1.5 mr-3 h-8 w-8 rounded-full;
+    }
+
+    &_avatar_campus {
+      @apply inline-block ml-0 mr-1.5 h-8 w-8 rounded-full;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .panel-min {
+    @apply hidden;
+  }
+}

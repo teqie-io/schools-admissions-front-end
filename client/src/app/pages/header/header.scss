@@ -1,0 +1,34 @@
+.header {
+  @apply bg-white flex items-center fixed z-30 border-b border-main-gray;
+
+  &-burger {
+    @apply ml-5 h-10 w-10 flex items-center justify-center rounded-full cursor-pointer  transition-all hover:bg-main-gray;
+  }
+}
+
+.namepage {
+  @apply text-black text-4xl font-extrabold h-16;
+}
+
+.header-open {
+  @apply ml-60;
+
+  width: calc(100vw - 14.75rem);
+}
+
+.header-closed {
+  width: calc(100vw - 4.375rem);
+  margin-left: 4.625rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .header-closed {
+    width: calc(100vw + 0.25rem);
+    margin-left: 0rem;
+  }
+
+  .header-open {
+    width: calc(100vw + 0.25rem);
+    margin-left: 0rem;
+  }
+}

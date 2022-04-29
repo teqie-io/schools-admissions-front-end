@@ -1,0 +1,91 @@
+.grades-programs {
+  @apply mt-20 mb-8 overflow-x-hidden;
+
+  transition: 0.1s ease-out;
+
+  &-row {
+    width: 60vw;
+
+    &_card {
+      @apply flex h-24;
+
+      .prod-card-section {
+        @apply w-56 h-20 relative flex justify-between ml-5 rounded-2xl shadow-grade;
+
+        top: 2.125rem;
+
+        &_text {
+          @apply mt-5 relative ml-4 mr-4;
+
+          bottom: 0.125rem;
+
+          h5 {
+            @apply text-xs leading-4 font-semibold mb-2;
+
+            letter-spacing: 0.063rem;
+          }
+
+          p {
+            @apply flex font-medium items-center text-xs mb-2;
+          }
+        }
+      }
+    }
+  }
+
+  &-search {
+    @apply mb-10 rounded-xl shadow-grade;
+    width: 16.875rem;
+
+    &-card {
+      @apply h-24 pl-10;
+
+      h2 {
+        @apply font-semibold;
+      }
+    }
+
+    &-input {
+      @apply flex flex-row items-end ml-4 mt-2 border-b border-main-gray;
+
+      &_img {
+        @apply h-5 pr-2 mb-1.5;
+      }
+
+      &_sort {
+        @apply h-7 pl-3 pr-2 mb-1.5 cursor-pointer relative z-10 border-b border-white;
+
+        top: 0.438rem;
+      }
+
+      &_input {
+        @apply h-6  pr-3;
+
+        margin-bottom: 0.063rem;
+        width: 11.25rem;
+        outline: none;
+        transition: 0.3s ease;
+        background: none;
+      }
+    }
+  }
+}
+
+.grades-programs-search-card:nth-child(3) {
+  margin-top: 5.625rem;
+}
+
+.hr-top {
+  @apply relative;
+
+  width: 100vw;
+  left: 16.875rem;
+  top: 5rem;
+}
+
+.hr-bottom {
+  @apply relative;
+
+  width: 100vw;
+  bottom: 0.625rem;
+}

@@ -1,0 +1,114 @@
+.basic-panel-navbar {
+  @apply block ml-0 text-main-black;
+
+  height: 33.75rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  img {
+    @apply mr-2;
+  }
+
+  &_name {
+    @apply text-sm not-italic mb-4 font-bold leading-4 tracking-normal ml-2 text-left;
+
+    letter-spacing: 1px;
+  }
+
+  &_actives {
+    @apply flex flex-col mb-5 ml-5 border-l border-second-gray;
+  }
+
+  &_link {
+    @apply flex mb-2 z-10 rounded-xl text-second-gray text-base items-center not-italic font-medium leading-4 tracking-normal text-left;
+
+    width: 13.438rem;
+    height: 2.188rem;
+
+    &:hover {
+      @apply text-main-black bg-main-white;
+    }
+
+    img {
+      @apply ml-2;
+    }
+
+    &_small {
+      @apply flex mb-1 items-center  text-gray-500 pl-2 ml-1.5 rounded-10px;
+
+      width: 11.688rem;
+      height: 1.875rem;
+
+      &:hover {
+        @apply text-main-black bg-main-white;
+      }
+    }
+
+    &-active {
+      @apply text-main-black;
+      background: rgba(0, 171, 85, 0.1);
+    }
+  }
+}
+
+.rotate {
+  @apply absolute;
+
+  right: 0.5rem;
+  transition: 0.3s;
+
+  &_0 {
+    transform: rotateZ(0deg);
+  }
+
+  &_90 {
+    transform: rotateZ(90deg);
+  }
+}
+
+@media screen and (min-height: 860px) {
+  .basic-panel-navbar {
+    height: 42rem;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .basic-panel-navbar {
+    height: 28.75rem;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  .basic-panel-navbar {
+    height: 24.75rem;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .basic-panel-navbar {
+    height: 20.75rem;
+  }
+}
+
+a:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+a {
+  position: relative;
+  overflow: hidden;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.513rem;
+  height: 0.513rem;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}

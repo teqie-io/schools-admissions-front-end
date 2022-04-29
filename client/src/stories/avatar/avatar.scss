@@ -1,0 +1,15 @@
+.avatar-component {
+  @apply rounded-full;
+
+  &-small {
+    @apply w-6 h-6;
+  }
+
+  &-medium {
+    @apply w-8 h-8;
+  }
+
+  &-large {
+    @apply w-10 h-10;
+  }
+}

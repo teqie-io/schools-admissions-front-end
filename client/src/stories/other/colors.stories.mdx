@@ -1,0 +1,58 @@
+import { Meta, ColorPalette, ColorItem, Preview } from '@storybook/addon-docs'
+
+<Meta title='Design Tokens/Colors' />
+
+# Colors
+
+## Basic
+
+<ColorPalette>
+  {['black', 'white'].map((color) => (
+    <ColorItem key={color} title={color} colors={[color]} />
+  ))}
+  {[
+    { title: 'main-blue', color: '#404EED' },
+    { title: 'main-gray', color: '#e2e2e2' },
+    { title: 'main-white', color: '#f4f6f8' },
+    { title: 'main-black', color: '#212b36' },
+    { title: 'second-gray', color: '#637381' },
+    { title: 'second-green', color: '#00664d' },
+    { title: 'second-white', color: '#e1e3e5' },
+    { title: 'second-blue', color: '#2f80ed' },
+    { title: 'third-gray', color: '#9fa9b3' },
+    { title: 'button-disable', color: '#919eab' },
+    { title: 'light', color: '#E7EAEE' },
+    { title: 'dot-gray', color: '#8C9196' },
+    { title: 'discord-black', color: '#2E3338' },
+    { title: 'discord-gray', color: '#B8BBBE' },
+    { title: 'black-default', color: '#202223' },
+    { title: 'surface', color: '#F6F6F7' },
+    { title: 'ligther-gray', color: '#F1F2F3' },
+    { title: 'light-green', color: '#27C59A' }
+  ].map((color) => (
+    <ColorItem key={color.title} title={color.title} colors={[color.color]} />
+  ))}
+  {['grey', 'blue', 'green', 'red', 'yellow'].map((color) => (
+    <ColorItem key={color} title={color} subtitle={`${color}-<step>`} colors={[color]} />
+  ))}
+</ColorPalette>
+
+## Gradients
+
+<ColorPalette>
+  <ColorItem title='grad' colors={['linear-gradient(to right,white,black)']} />
+</ColorPalette>
+
+## Usage
+
+```css
+.component {
+  @apply text-main-blue;
+}
+```
+
+Pre-generated utility CSS classes to define text, background and border color (also available to use with [pseudo-classes and other states](https://tailwindcss.com/docs/customizing-colors)):
+
+<Preview isExpanded>
+  <div class='text-main-blue'>Content</div>
+</Preview>

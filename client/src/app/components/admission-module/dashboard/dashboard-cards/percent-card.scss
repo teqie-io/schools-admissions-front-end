@@ -1,0 +1,30 @@
+.percent-card {
+  @apply rounded-2xl flex items-center mb-2.5 mt-3 shadow-standart;
+
+  width: 13.875rem;
+  height: 4.906rem;
+
+  &_conv {
+    background: #8c9094;
+    background-image: url("../../../../static/image/overlaycolor.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 9.5rem;
+  }
+
+  &_apl {
+    background: #404eed;
+    background-image: url("../../../../static/image/overlaycolortwo.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 9.063rem;
+  }
+
+  &_enq {
+    background: #f2c94c;
+    background-image: url("../../../../static/image/overlaycolortwo.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 9.063rem;
+  }
+}

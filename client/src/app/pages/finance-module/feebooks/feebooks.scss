@@ -1,0 +1,39 @@
+.feebooks {
+  @apply mt-20 mb-8 overflow-x-hidden;
+
+  transition: 0.1s ease-out;
+
+  &_p {
+    @apply text-gray-600 font-bold mb-4;
+  }
+
+  &_h3 {
+    @apply text-black font-bold mb-2;
+  }
+
+  &-card {
+    @apply flex font-semibold cursor-pointer mr-8 mb-2 rounded-xl;
+
+    width: 9.375rem;
+    height: 12.313rem;
+
+    &-book {
+      @apply pt-5 pl-4 flex-col;
+
+      background-image: url('../../../static/image/squiggles.svg');
+      background-color: #6fcf97;
+
+      &_pending {
+        background-color: #fff7cd;
+      }
+
+      &_draft {
+        background-color: #eb5757;
+      }
+    }
+
+    &-button {
+      @apply flex-col border items-center select-none justify-center border-gray-200 text-gray-200;
+    }
+  }
+}

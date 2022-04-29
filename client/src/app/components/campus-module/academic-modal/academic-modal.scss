@@ -1,0 +1,54 @@
+.academ-terms-modal {
+  @apply bg-white relative bottom-32;
+
+  transition: 0.1s ease-out;
+
+  &_full {
+    width: calc(100vw - 21.25rem);
+  }
+
+  &_min {
+    width: calc(100vw - 14.375rem);
+  }
+
+  &-buttons {
+    @apply bg-white flex w-screen border-t border-third-gray justify-end fixed bottom-0 right-0 items-center pr-12;
+
+    height: 10vh;
+  }
+
+  &_name {
+    @apply text-4xl font-extrabold w-full bg-white;
+  }
+
+  .table {
+    @apply relative;
+
+    top: 0.625rem;
+    transition: 0.1s ease-out;
+
+    &_full {
+      width: 82vw;
+    }
+
+    &_min {
+      width: 90vw;
+    }
+
+    .center {
+      @apply relative;
+
+      left: 2.313rem;
+    }
+  }
+
+  th {
+    @apply text-left pl-1;
+  }
+
+  tr {
+    @apply h-20 relative;
+
+    bottom: 2.5rem;
+  }
+}

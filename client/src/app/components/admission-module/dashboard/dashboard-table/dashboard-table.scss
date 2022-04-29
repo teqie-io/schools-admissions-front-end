@@ -1,0 +1,83 @@
+.dashboard-table {
+  @apply rounded-2xl shadow-standart;
+
+  transition: 0.2s ease-out;
+
+  table {
+    width: 97.8%;
+  }
+
+  h1 {
+    color: #212b36;
+    height: 4.75rem;
+  }
+
+  thead {
+    @apply rounded-2xl text-second-gray;
+
+    background: #edeeef;
+    height: 3.5rem;
+  }
+
+  &_open {
+    @apply mr-6;
+
+    width: 34.688rem;
+    height: 34.063rem;
+  }
+
+  &_closed {
+    @apply mr-6;
+
+    width: 34.688rem;
+    height: 34.063rem;
+  }
+
+  &-top {
+    @apply rounded-md flex items-center justify-center;
+
+    width: 2.875rem;
+    height: 1.375rem;
+
+    &_1 {
+      color: #00664d;
+      background: rgb(0 128 96 / 16%);
+    }
+
+    &_2 {
+      color: #b78103;
+      background: rgb(255 193 7 / 16%);
+    }
+
+    &_3 {
+      color: #0c53b7;
+      background: rgb(24 144 255 / 16%);
+    }
+
+    &_4 {
+      color: #b72136;
+      background: rgb(255 72 66 / 16%);
+    }
+
+    &_5 {
+      color: #637381;
+      background: rgb(145 158 171 / 16%);
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .dashboard-table {
+    &_open {
+      @apply mr-0;
+
+      width: 100%;
+    }
+
+    &_closed {
+      @apply mr-0;
+
+      width: 100%;
+    }
+  }
+}

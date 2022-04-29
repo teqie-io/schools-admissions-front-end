@@ -1,0 +1,16 @@
+.company {
+  @apply mt-20 mb-8 overflow-x-hidden pr-5 flex flex-col;
+
+  width: 98vw;
+
+  &-card {
+    @apply flex justify-between pl-7 pr-7 cursor-pointer items-center w-full rounded-md;
+
+    height: 5rem;
+    border: 0.063rem solid #fff;
+
+    &:hover {
+      border: 0.063rem solid #e7eaee;
+    }
+  }
+}

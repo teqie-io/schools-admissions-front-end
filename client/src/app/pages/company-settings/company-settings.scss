@@ -1,0 +1,24 @@
+.company-settings {
+  @apply mt-20 mb-8 overflow-x-hidden pr-5 flex flex-col;
+
+  width: 98vw;
+
+  .company-modal {
+    @apply w-screen flex justify-center h-screen overflow-hidden absolute top-0 left-0 z-30;
+
+    transition: 0.2s ease-in-out;
+
+    &-bg {
+      @apply w-full h-full absolute top-0 left-0;
+
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &-card {
+      @apply bg-white pt-9 pl-9 mt-40 z-30 rounded-lg;
+
+      width: 35.75rem;
+      height: 16.063rem;
+    }
+  }
+}

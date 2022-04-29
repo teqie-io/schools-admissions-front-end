@@ -1,0 +1,18 @@
+.overview-card {
+  @apply ml-2 mb-5 rounded-2xl mr-7 mt-1 flex items-center justify-between shadow-main-card;
+
+  min-width: 72.313rem;
+  height: 10.688rem;
+
+  &-window {
+    @apply rounded-2xl flex cursor-pointer flex-col items-center justify-center;
+
+    width: 7.625rem;
+    height: 7.875rem;
+    background: rgba(240, 240, 240, 0.6);
+  }
+
+  &-group {
+    @apply flex flex-col justify-between h-40 pl-6 pt-5 pb-5;
+  }
+}

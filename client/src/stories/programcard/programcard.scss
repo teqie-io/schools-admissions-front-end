@@ -1,0 +1,21 @@
+.classes {
+  @apply flex relative justify-around;
+
+  top: 1.563rem;
+  right: 0.313rem;
+
+  &_row {
+    @apply flex flex-col;
+
+    justify-content: space-evenly;
+
+    h4 {
+      @apply text-black font-semibold text-base leading-7;
+    }
+
+    h3 {
+      @apply font-medium text-third-gray leading-7;
+      font-size: 0.813rem;
+    }
+  }
+}

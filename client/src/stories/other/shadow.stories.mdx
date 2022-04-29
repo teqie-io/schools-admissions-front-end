@@ -1,0 +1,244 @@
+import { Meta, ColorPalette, ColorItem, Preview } from '@storybook/addon-docs'
+
+<Meta title='Design Tokens/Shadow' />
+
+# Shadow
+
+<table>
+  <thead>
+    <tr>
+      <th>token</th>
+      <th>CSS class</th>
+      <th>value</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>sm</td>
+    <td>
+      <code>.shadow-sm</code>
+    </td>
+    <td>0 1px 2px 0 rgba(0, 0, 0, 0.05)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div class='shadow-sm bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>base</td>
+    <td>
+      <code>.shadow</code>
+    </td>
+    <td>0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div class='shadow bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>md</td>
+    <td>
+      <code>.shadow-md</code>
+    </td>
+    <td>0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-md bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>main-card</td>
+    <td>
+      <code>.shadow-main-card</code>
+    </td>
+    <td>0rem 0rem 0.5rem rgba(145, 158, 171, 0.24), 0rem 1rem 2rem -0.25rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-main-card bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>mini</td>
+    <td>
+      <code>.shadow-mini</code>
+    </td>
+    <td>0rem 0rem 0.125rem rgba(145, 158, 171, 0.24), 0rem 1.25rem 2.5rem -0.25rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-mini bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>standart</td>
+    <td>
+      <code>.shadow-standart</code>
+    </td>
+    <td>0rem 0.5rem 1rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-standart bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>light</td>
+    <td>
+      <code>.shadow-light</code>
+    </td>
+    <td>0rem 0.063rem 0.125rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-light bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>aproval</td>
+    <td>
+      <code>.shadow-aproval</code>
+    </td>
+    <td>0rem 0.125rem 0.063rem rgba(0, 0, 0, 0.05), 0rem 0rem 0.063rem rgba(0, 0, 0, 0.25)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-aproval bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>institute</td>
+    <td>
+      <code>.shadow-institute</code>
+    </td>
+    <td>0rem 0rem 0.125rem rgba(145, 158, 171, 0.24), 0rem 0.75rem 1.5rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-institute bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>signature</td>
+    <td>
+      <code>.shadow-signature</code>
+    </td>
+    <td>0rem 0rem 0.125rem rgba(145, 158, 171, 0.24), 0rem 1rem 2rem -0.25rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-signature bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>bloom-welcome</td>
+    <td>
+      <code>.shadow-bloom-welcome</code>
+    </td>
+    <td> 0rem 0rem 0.125rem rgba(145, 158, 171, 0.24), 0rem 0.75rem 1.5rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-bloom-welcome bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>feebook-modal</td>
+    <td>
+      <code>.shadow-feebook-modal</code>
+    </td>
+    <td>0rem 0rem 0.875rem 0rem rgba(34, 60, 80, 0.2)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-feebook-modal bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>scholarship-card</td>
+    <td>
+      <code>.shadow-scholarship-card</code>
+    </td>
+    <td>0rem 0rem 1rem 0rem rgba(34, 60, 80, 0.2)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-scholarship-card bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>header-button</td>
+    <td>
+      <code>.shadow-header-button</code>
+    </td>
+    <td>0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-header-button bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>bloom-login</td>
+    <td>
+      <code>.shadow-bloom-login</code>
+    </td>
+    <td> 0rem 0rem 4rem rgba(145, 158, 171, 0.24), 0rem 1.5rem 3rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-bloom-login bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>grade</td>
+    <td>
+      <code>.shadow-grade</code>
+    </td>
+    <td> 0.25rem 0.625rem 1.5rem 0.25rem rgba(34, 60, 80, 0.15)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-grade bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>schduled</td>
+    <td>
+      <code>.shadow-schduled</code>
+    </td>
+    <td> 0 0 0.125rem rgba(145, 158, 171, 0.24), 0 1rem 2rem -0.25rem rgba(145, 158, 171, 0.24)</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div tabIndex='0' class='shadow-schduled bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>none</td>
+    <td>
+      <code>.shadow-none</code>
+    </td>
+    <td>0 0 #0000</td>
+    <td>
+      <div class='p-4 bg-grey-200'>
+        <div class='shadow-none bg-white rounded-xl w-10 h-10'></div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+## Usage
+
+```css
+.component {
+  @apply shadow-main-card;
+}
+```
+
+<Preview isExpanded>
+  <div class='shadow-main-card bg-white rounded-xl w-10 h-10'></div>
+</Preview>

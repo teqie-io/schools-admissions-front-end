@@ -1,0 +1,69 @@
+.bloom-login {
+  @apply w-screen h-screen bg-gray-100 text-gray-900 px-8 pt-24;
+
+  font-family: 'Poppins';
+
+  &-header {
+    @apply text-center relative select-none mb-24;
+
+    &_title {
+      @apply text-2xl leading-8 font-semibold;
+    }
+
+    &_btn {
+      @apply absolute mr-1 overflow-visible w-4 h-4;
+      left: 9%;
+      top: 19%;
+      transition: 0.2 linear;
+
+      span {
+        border-bottom: 3px solid;
+        border-left: 3px solid;
+        transform: rotate(45deg);
+        border-color: #212b36;
+        @apply inline-block min-w-full min-h-full;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &-body {
+    margin: 0 auto;
+
+    @apply grid bg-white rounded-lg overflow-hidden mb-24 shadow-bloom-login;
+    grid-template-columns: 1fr 1fr;
+    width: 715px;
+    height: 360px;
+    background-color: #fff;
+
+    &_greet {
+      @apply flex flex-col justify-center items-center pb-8 select-none;
+    }
+    &_title {
+      @apply text-xl font-bold;
+    }
+    &_subtitle {
+      @apply font-semibold text-sm text-gray-400;
+    }
+    &_img {
+      @apply inline-block object-cover w-56 h-auto;
+    }
+  }
+  &-form {
+    padding: 3.7rem 3.2rem;
+    &_submit {
+      @apply w-full font-semibold uppercase text-xs rounded-none text-indigo-600 justify-center bg-gray-100 mt-6;
+      &:hover {
+        background-color: darken($color: #f5f4f7, $amount: 1) !important;
+      }
+    }
+  }
+  &-contact {
+    @apply inline-block font-semibold text-xs;
+    a {
+      @apply text-indigo-600;
+    }
+  }
+}

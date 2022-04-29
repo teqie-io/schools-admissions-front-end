@@ -1,0 +1,11 @@
+.stats-item {
+  @apply text-center capitalize;
+
+  &_number {
+    @apply font-bold text-black text-3xl;
+  }
+
+  &_title {
+    @apply text-sm font-medium text-second-gray;
+  }
+}

@@ -1,0 +1,120 @@
+.header-search {
+  @apply flex flex-row w-full items-center justify-between h-14  pr-5 z-20;
+
+  &-input {
+    @apply flex flex-row items-center;
+
+    &_img {
+      @apply h-5 pr-3 pl-4;
+    }
+
+    &_input {
+      @apply h-6 mb-0;
+
+      outline: none;
+      transition: 0.3s ease;
+      background: none;
+      width: 25rem;
+    }
+  }
+
+  &-nav {
+    @apply flex relative z-50 flex-row items-center justify-between mr-4;
+    width: 13.725rem;
+
+    .profile-box {
+      @apply absolute right-0 top-14 z-50;
+
+      &-card {
+        @apply bg-white border rounded-lg transform shadow-main-card;
+
+        width: 15rem;
+        height: 19.5rem;
+
+        &_link {
+          @apply flex pl-5 items-center justify-start w-60 h-10;
+
+          &:hover {
+            background-color: rgba(145, 158, 171, 0.08);
+          }
+        }
+
+        .notification-task {
+          @apply flex items-center pl-4 pr-4;
+
+          transition: 0.2s ease-in-out;
+          margin-top: 0.125rem;
+          width: 22.5rem;
+          height: 5.625rem;
+
+          &::after {
+            width: 0.7rem;
+            height: 0.7rem;
+            background: rgba(0, 0, 0, 0.2);
+          }
+
+          &:hover {
+            background: rgba(145, 158, 171, 0.08);
+          }
+
+          &__read {
+            background: rgba(145, 158, 171, 0.16);
+          }
+        }
+
+        .option-link {
+          @apply flex items-center justify-start pl-5 text-sm mb-2;
+
+          width: 12.375rem;
+          height: 2.5rem;
+
+          &:hover {
+            background: rgba(145, 158, 171, 0.08);
+          }
+        }
+
+        .notification-all {
+          @apply font-semibold rounded-xl;
+
+          transition: 0.2s ease-in-out;
+          height: 2.5rem;
+          width: 21.5rem;
+          color: #00ab55;
+
+          &::after {
+            width: 0.65rem;
+            height: 0.65rem;
+          }
+
+          &:hover {
+            background: rgba(0, 171, 85, 0.08);
+          }
+        }
+      }
+    }
+
+    &_button {
+      @apply rounded-full shadow-header-button w-8 h-8 bg-main-blue text-white text-3xl pt-0.5 flex items-center justify-center;
+      font-family: sans-serif;
+      padding-right: 0.063rem;
+    }
+
+    &-profile_img {
+      @apply inline-block h-8 w-8 rounded-full  cursor-pointer;
+    }
+
+    &_img {
+      @apply h-5 cursor-pointer;
+    }
+  }
+}
+
+.marks-all-read {
+  @apply h-9 w-9 flex items-center justify-center rounded-full;
+
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba(0, 171, 85, 0.08);
+  }
+}

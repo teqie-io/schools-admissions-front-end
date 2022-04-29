@@ -1,0 +1,20 @@
+.bloom-welcome {
+  font-family: 'Poppins';
+  @apply text-gray-900 py-12 w-screen mt-20 flex flex-col items-center justify-center;
+  &-intro {
+    @apply text-center font-semibold mb-32;
+    &_title {
+      @apply mb-2 text-xl;
+      span {
+        @apply text-indigo-700 capitalize;
+      }
+    }
+    &_subtitle {
+      @apply text-sm font-extrabold text-gray-400;
+    }
+  }
+  &-cards {
+    @apply flex items-center justify-center;
+    column-gap: 5rem;
+  }
+}

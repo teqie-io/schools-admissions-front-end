@@ -1,0 +1,13 @@
+.tasks-table {
+  @apply mb-7 font-semibold text-xl w-full rounded-2xl shadow-standart;
+
+  transition: 0.2s ease-out;
+  height: 24.313rem;
+  padding: 2.125rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .tasks-table {
+    height: 23.188rem;
+  }
+}

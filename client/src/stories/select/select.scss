@@ -1,0 +1,80 @@
+.select {
+  @apply block relative select-none;
+
+  color: #263238;
+
+  &-large {
+    width: 344px;
+    height: 56px;
+  }
+
+  &-small {
+    width: 135px;
+    height: 29px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      @apply bg-gray-100;
+    }
+
+    &-focus {
+      @apply bg-gray-100;
+    }
+  }
+
+  &-title {
+    @apply absolute top-0 bg-white transform scale-75 -translate-y-3 z-0 px-1 py-0;
+    color: #919eab;
+  }
+
+  &-btn {
+    @apply relative flex justify-between cursor-pointer rounded-lg;
+    padding: 0.875rem;
+
+    &-large {
+      padding: 0.875rem;
+      border: 1px solid #e1e3e5;
+
+      &-active {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom: none;
+      }
+    }
+
+    &-small {
+      padding: 10px;
+      bottom: 7px;
+    }
+  }
+
+  &-content {
+    @apply bg-white absolute z-10;
+
+    overflow-y: auto;
+
+    &-large {
+      border: 1px solid #e1e3e5;
+
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      width: 344px;
+      max-height: 160px;
+    }
+
+    &-small {
+      width: 135px;
+      max-height: 90px;
+      top: 29px;
+    }
+  }
+
+  &-item {
+    @apply cursor-pointer;
+    padding: 0.45rem 0.875rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      @apply bg-gray-100;
+    }
+  }
+}

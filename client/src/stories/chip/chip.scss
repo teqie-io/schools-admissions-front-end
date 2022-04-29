@@ -1,0 +1,57 @@
+.chip {
+  @apply flex justify-center rounded-full items-center pr-1 font-medium relative;
+
+  &-avatar {
+    @apply flex relative w-6 h-6 mt-1 mb-1 justify-center items-center text-xs rounded-full;
+    margin-left: 0.313rem;
+    margin-right: 0.375rem;
+  }
+
+  &-label {
+    @apply text-sm font-normal leading-none flex-initial;
+  }
+
+  &-contained {
+    @apply text-white;
+
+    background: #404eed;
+  }
+
+  &-outlined {
+    @apply bg-transparent border;
+
+    border-color: #404eed;
+    color: #404eed;
+  }
+
+  &-text {
+    @apply text-black;
+    background: #919eab29;
+  }
+
+  &-delete {
+    @apply flex relative justify-center items-center rounded-full;
+
+    font-size: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+
+    &-contained {
+      @apply text-white bg-white;
+
+      color: #404eed;
+    }
+
+    &-outlined {
+      @apply text-white;
+
+      background: #404eed;
+    }
+
+    &-text {
+      @apply text-black;
+
+      background: #919eab29;
+    }
+  }
+}

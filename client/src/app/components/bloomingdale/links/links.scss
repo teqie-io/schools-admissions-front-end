@@ -1,0 +1,21 @@
+.bloom-links {
+  @apply pl-8 pr-8 pt-10;
+
+  width: 20.938rem;
+  height: 32.813rem;
+  background-color: #ebf4ef;
+
+  &-card {
+    @apply w-full bg-white mb-4 flex flex-col items-center justify-center;
+
+    height: 10.938rem;
+  }
+
+  &-link {
+    @apply text-white font-semibold text-sm;
+
+    width: 11.25rem;
+    height: 2.063rem;
+    background: #1615d0;
+  }
+}

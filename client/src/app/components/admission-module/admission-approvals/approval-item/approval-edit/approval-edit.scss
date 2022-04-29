@@ -1,0 +1,54 @@
+.admission-approvals-edit {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  &_title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #919eab;
+  }
+  &_body {
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+  }
+  &_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+
+    .area {
+      border: 1px solid rgba(145, 158, 171, 0.32);
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+
+      label {
+        @apply absolute top-0 bg-white transform scale-90 -translate-x-1 -translate-y-3 z-0 ml-2 px-1 py-0;
+        color: #919eab;
+      }
+
+      &:hover {
+        border-color: #404eed;
+      }
+
+      &:hover ~ label {
+        color: #404eed;
+      }
+    }
+  }
+  &_group {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 0.875rem;
+      color: #212b36;
+    }
+    .pure-material-checkbox span::after {
+      top: 5px !important;
+    }
+  }
+}

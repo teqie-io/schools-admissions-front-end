@@ -1,0 +1,62 @@
+.feebooks-modal {
+  @apply pointer-events-none absolute top-0 opacity-0 left-0 z-20 flex justify-center items-center;
+
+  width: 100vw;
+  height: 100vh;
+  transition: 0.2s ease-in-out;
+
+  &-active {
+    @apply pointer-events-auto opacity-100;
+
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &_bg {
+    @apply absolute top-0 left-0;
+
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &-card {
+    @apply bg-white relative rounded-lg shadow-feebook-modal;
+
+    width: 38.25rem;
+    height: 25.313rem;
+
+    &-header {
+      @apply flex items-center justify-between border-b border-main-gray;
+
+      height: 4.25rem;
+
+      button:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &-row {
+      @apply flex justify-center items-center border-b border-main-gray;
+
+      height: 16.688rem;
+
+      &_label {
+        @apply bg-no-repeat border border-main-gray bg-main-white bg-center font-semibold flex rounded-lg pl-4 items-end;
+
+        background-image: url('@image/stuckbooks.svg');
+        height: 12.313rem;
+        padding-bottom: 1.063rem;
+        width: 9.375rem;
+      }
+
+      &_selects {
+        @apply relative flex flex-col justify-between;
+
+        &_checkbox {
+          width: 21.5rem;
+          height: 3.5rem;
+        }
+      }
+    }
+  }
+}

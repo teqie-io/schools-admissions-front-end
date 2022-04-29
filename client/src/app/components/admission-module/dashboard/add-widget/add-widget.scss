@@ -1,0 +1,35 @@
+.add-widget {
+  @apply bg-white rounded-2xl px-11 pt-11 mb-7 shadow-standart;
+
+  padding-bottom: 4.5rem;
+  min-height: 27.5rem;
+  transition: 0.2s ease-out;
+
+  &-container {
+    @apply flex items-center flex-col justify-center;
+  }
+
+  &-text {
+    @apply mb-8 text-center;
+  }
+
+  &_title {
+    @apply text-2xl font-bold text-black mb-4;
+  }
+
+  &_subtitle {
+    @apply font-medium text-xl;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .add-widget {
+    width: calc(100% + 33px);
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .add-widget {
+    width: calc(100%);
+  }
+}

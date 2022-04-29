@@ -1,0 +1,80 @@
+.feebook-edit {
+  @apply mt-20 mb-8 overflow-x-hidden;
+
+  transition: 0.1s ease-out;
+
+  &-card {
+    @apply rounded-lg select-auto border border-second-white;
+
+    &_content {
+      @apply ml-8;
+
+      width: 51.063rem;
+
+      h3 {
+        @apply mb-4 text-third-gray;
+      }
+    }
+
+    &_row {
+      @apply flex cursor-pointer mb-5 items-center justify-between;
+
+      width: 53.25rem;
+      height: 6.5rem;
+
+      h2 {
+        @apply ml-8 mr-12;
+      }
+
+      span {
+        @apply text-sm text-green-600;
+      }
+
+      &_button {
+        @apply ml-2 mr-8;
+      }
+    }
+
+    &_open {
+      min-height: 20rem;
+    }
+
+    &_closed {
+      height: 6.5rem;
+    }
+  }
+
+  &-field {
+    @apply ml-20 mt-5;
+
+    width: 12.875rem;
+    height: 22.813rem;
+
+    &_dot {
+      @apply w-4 h-4 mt-1 bg-main-blue rounded-full;
+    }
+
+    &_gray {
+      @apply bg-third-gray;
+    }
+
+    &_outline {
+      @apply border border-third-gray;
+      background: none;
+    }
+
+    p {
+      @apply font-semibold;
+
+      width: 11.625rem;
+    }
+  }
+}
+
+.tab-button {
+  @apply ml-1.5 pl-4 pr-4 pt-1 pb-1 border border-second-white rounded-lg bg-white mr-4 outline-none text-sm mb-8;
+
+  &_active {
+    @apply text-white border  bg-main-blue;
+  }
+}

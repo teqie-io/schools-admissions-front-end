@@ -1,0 +1,48 @@
+.stages {
+  @apply mt-20 mb-8 overflow-x-hidden pr-5 flex flex-col;
+
+  width: 98vw;
+
+  &--dom-card {
+    @apply flex select-none text-sm shadow-institute flex-col pt-4 pb-4 pl-8 justify-between rounded-lg relative mr-9 ml-9 mb-12 mt-5;
+
+    width: 10.938rem;
+    height: 5rem;
+  }
+}
+
+.button-card {
+  @apply transition-all group-hover:opacity-100 opacity-0 hover:bg-main-blue hover:text-white absolute w-6 h-6 rounded-full bg-main-gray;
+
+  &_left {
+    @apply -left-3 top-7;
+  }
+
+  &_middle__add {
+    @apply -bottom-3;
+
+    left: 1rem;
+  }
+
+  &_middle__remove {
+    @apply -bottom-3;
+
+    left: 3.1rem;
+  }
+
+  &_right {
+    @apply -right-3 top-7;
+  }
+
+  &_top__add {
+    @apply -top-3;
+
+    left: 1rem;
+  }
+
+  &_top__remove {
+    @apply -top-3;
+
+    left: 3.1rem;
+  }
+}

@@ -1,0 +1,160 @@
+.information-field {
+  @apply mt-5 mb-10;
+
+  .footer-field {
+    @apply relative bg-white justify-center items-center flex bottom-0;
+
+    height: 4.438rem;
+
+    &-row {
+      @apply items-center justify-between flex;
+
+      width: 30.063rem;
+      height: 3.188rem;
+
+      &-button {
+        @apply h-12 w-12 flex flex-col items-center justify-center text-white bg-main-blue;
+
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+
+        span {
+          @apply leading-4 font-medium;
+        }
+      }
+    }
+  }
+
+  .address-edit {
+    @apply mb-10 shadow-standart rounded-2xl;
+
+    width: 62.5rem;
+    height: 34.75rem;
+  }
+
+  .header-field {
+    @apply w-full pl-10 border-b flex justify-between;
+
+    &-button {
+      @apply text-sm border-b-2 border-white mr-7 pb-2;
+
+      transition: 0.2s ease-in-out;
+      color: #cfd0d7;
+
+      &_active {
+        @apply border-main-black;
+
+        color: #6d7175;
+      }
+    }
+  }
+
+  &_family {
+    @apply mb-10 shadow-standart;
+
+    width: 20.063rem;
+    height: 27.813rem;
+    border-radius: 0 0 1rem 1rem;
+
+    .btn {
+      transition: 0.2s ease-in-out;
+    }
+
+    button::after {
+      content: none;
+    }
+  }
+
+  &_application {
+    @apply mb-10 shadow-standart;
+
+    width: 63.75rem;
+    height: 28.813rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  &_personal {
+    @apply mb-10 shadow-standart;
+
+    width: 62.188rem;
+    height: 32.5rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  &_parent {
+    @apply ml-9 mb-10 shadow-standart;
+
+    width: 57.75rem;
+    height: 28.125rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  &_address {
+    @apply ml-9 mb-10 shadow-standart;
+
+    width: 57.75rem;
+    min-height: 13.125rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .chip-field {
+    @apply rounded-md text-xs mr-2;
+
+    color: #8c9196;
+    background: #edeeef;
+    padding: 0.125rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1389px) {
+  .information-field {
+    &_personal {
+      width: 54.188rem;
+    }
+
+    &_parent {
+      width: 49.75rem;
+    }
+
+    &_address {
+      width: 49.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .information-field {
+    &_personal {
+      width: 51.588rem;
+    }
+
+    &_parent {
+      width: 48.75rem;
+    }
+
+    &_address {
+      width: 48.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  .information-field {
+    .address-edit {
+      width: 43.75rem;
+
+      .google-img {
+        width: 615px;
+        height: 100px;
+      }
+    }
+
+    &_application {
+      @apply mb-10 shadow-standart;
+
+      width: 43.75rem;
+      height: 28.813rem;
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+}

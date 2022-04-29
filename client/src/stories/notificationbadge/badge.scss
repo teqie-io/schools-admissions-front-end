@@ -1,0 +1,22 @@
+.notification-task {
+  @apply flex items-center pl-4 pr-4;
+
+  transition: 0.2s ease-in-out;
+  margin-top: 0.125rem;
+  width: 22.5rem;
+  height: 5.625rem;
+
+  &::after {
+    width: 0.7rem;
+    height: 0.7rem;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover {
+    background: rgba(145, 158, 171, 0.08);
+  }
+
+  &__read {
+    background: rgba(145, 158, 171, 0.16);
+  }
+}

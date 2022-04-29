@@ -1,0 +1,24 @@
+.bloom-welcome-card {
+  @apply flex flex-col items-center h-48 font-semibold shadow-bloom-welcome;
+  font-family: 'Poppins';
+  width: 305px;
+  background: #fff;
+  padding: 2.5rem 3rem;
+  &_title {
+    @apply capitalize text-xl;
+    letter-spacing: 1px;
+  }
+  &_desc {
+    @apply capitalize text-sm mb-6;
+    opacity: 0.2;
+  }
+  &_title,
+  &_desc {
+    @apply overflow-hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &_btn {
+    @apply flex items-center justify-center rounded-none w-full text-xs font-semibold;
+  }
+}

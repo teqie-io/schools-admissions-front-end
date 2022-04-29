@@ -1,0 +1,32 @@
+.scholarship-card {
+  @apply mr-8 rounded-lg mb-8 ml-2 pl-6 pt-4 shadow-scholarship-card;
+
+  width: 19.313rem;
+  height: 15.188rem;
+
+  &-add {
+    @apply flex items-center justify-center flex-col pr-6 pb-5 cursor-pointer text-gray-500 select-none;
+
+    span {
+      @apply font-semibold;
+    }
+  }
+
+  input {
+    @apply text-black border-b border-white;
+  }
+
+  .stack {
+    margin-left: 3.688rem;
+  }
+
+  &_row {
+    @apply flex items-center mb-3;
+
+    transition: 0.2s ease-in-out;
+
+    span {
+      @apply text-black;
+    }
+  }
+}

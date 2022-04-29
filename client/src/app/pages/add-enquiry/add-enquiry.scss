@@ -1,0 +1,63 @@
+.add-enquiry {
+  @apply mt-14 mb-8 overflow-x-hidden pr-5 flex flex-col items-center;
+
+  width: 98vw;
+
+  &_title {
+    @apply font-black text-3xl mb-7;
+  }
+
+  &-form {
+    @apply w-full;
+
+    max-width: 484px;
+  }
+
+  &-section {
+    @apply mb-8;
+
+    &_header {
+      @apply ml-3.5 mb-5;
+    }
+
+    &_title {
+      @apply font-bold text-base;
+    }
+
+    &_text {
+      @apply text-sm;
+    }
+
+    &_content {
+      @apply flex flex-wrap gap-y-6 gap-x-7 mb-10;
+    }
+
+    &_footer {
+      @apply flex items-center gap-x-5;
+    }
+  }
+
+  &-upload {
+    @apply flex items-center gap-x-7;
+
+    &_image {
+      @apply inline-block object-cover select-none pointer-events-none w-16 h-16;
+
+      border-radius: 50%;
+    }
+  }
+
+  &_input {
+    @apply w-full;
+
+    max-width: 100%;
+
+    input {
+      @apply text-base w-full;
+    }
+
+    &--small {
+      max-width: 47%;
+    }
+  }
+}

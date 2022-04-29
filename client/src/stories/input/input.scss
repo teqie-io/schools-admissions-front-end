@@ -1,0 +1,81 @@
+.input {
+  @apply relative;
+
+  &-styled {
+    @apply block appearance-none bg-transparent relative;
+
+    border: 1px solid rgba(145, 158, 171, 0.32);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &:hover {
+      border-color: #404eed;
+    }
+
+    &:hover ~ .label {
+      color: #404eed;
+    }
+
+    &:focus {
+      @apply outline-none;
+      border-color: #404eed;
+    }
+
+    &:focus ~ .label {
+      color: #404eed;
+      transform: scale(0.6);
+      font-size: 120%;
+      top: 8px;
+    }
+
+    &:valid ~ .label {
+      transform: scale(0.6);
+      font-size: 120%;
+      top: 8px;
+    }
+
+    &:disabled {
+      @apply border-gray-200 text-gray-200;
+      @apply bg-white;
+      cursor: not-allowed;
+    }
+
+    &:disabled ~ .label {
+      @apply text-gray-200;
+    }
+  }
+}
+
+.error {
+  border: 2px solid #ff4842;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.error ~ .label {
+  color: #ff4842;
+}
+
+.label {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 100%;
+  color: #919eab;
+  transform-origin: 0 -150%;
+  transition: transform 300ms ease;
+  pointer-events: none;
+  background: white;
+}
+
+.input-size {
+  &-medium {
+    @apply p-2.5 text-xl;
+  }
+
+  &-small {
+    @apply p-2 text-sm;
+  }
+}

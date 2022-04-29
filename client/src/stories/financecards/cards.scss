@@ -1,0 +1,27 @@
+.card-row {
+  @apply pointer-events-none select-none;
+
+  opacity: 0.5;
+
+  &_active {
+    @apply opacity-100 select-auto pointer-events-auto;
+  }
+}
+
+.mr-15 {
+  margin-right: 4.375rem;
+}
+
+.mr-14_fix {
+  margin-right: 3.563rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}

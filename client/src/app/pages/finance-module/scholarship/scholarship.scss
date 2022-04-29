@@ -1,0 +1,29 @@
+.scholarship {
+  @apply mt-20 mb-8 overflow-x-hidden h-full;
+
+  transition: 0.1s ease-out;
+
+  &-row {
+    @apply flex;
+
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.card-row {
+  @apply pointer-events-none select-none;
+
+  opacity: 0.5;
+
+  &_active {
+    @apply opacity-100 select-auto pointer-events-auto;
+  }
+}
+
+.mr-15 {
+  margin-right: 4.375rem;
+}
+
+.mr-14_fix {
+  margin-right: 3.563rem;
+}

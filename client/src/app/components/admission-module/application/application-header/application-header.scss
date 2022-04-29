@@ -1,0 +1,84 @@
+.application-header {
+  @apply grid grid-cols-2 2xl:grid-cols-4 mt-1 shadow-mini;
+
+  min-height: 6.313rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  &-profile {
+    @apply pt-1.5 pb-1.5 pl-4 pr-8 flex flex-col justify-between;
+
+    width: 18.125rem;
+    height: 5rem;
+
+    .text-micro {
+      @apply text-10px;
+    }
+
+    .rounded-profile {
+      @apply rounded-md mr-2 flex items-center justify-center font-semibold text-xs pl-2 pr-2;
+
+      height: 1.375rem;
+
+      &_main {
+        @apply text-second-green;
+
+        background: rgb(0 128 96 / 16%);
+      }
+
+      &_second {
+        @apply border-second-gray border text-second-gray;
+      }
+    }
+  }
+
+  &-family {
+    @apply pt-1.5 pb-1.5 pl-8 relative;
+
+    overflow-y: auto;
+    vertical-align: middle;
+    height: 5.7rem;
+  }
+
+  &-referal {
+    @apply flex flex-col justify-center pt-1.5 pb-1.5 pl-4 pr-4 relative;
+
+    // width: 24.063rem;
+    height: 5rem;
+
+    .school-card {
+      @apply flex items-center rounded-md shadow-standart;
+
+      width: 9.375rem;
+      height: 2.188rem;
+    }
+  }
+
+  &-type {
+    @apply border-l border-main-gray flex flex-col items-center pt-1.5 pb-1.5 pl-4 pr-8 relative;
+
+    vertical-align: middle;
+
+    //width: 18.125rem;
+    height: 6.313rem;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .application-header {
+    &-family {
+      @apply pt-1.5 pb-1.5 mb-1.5 pl-8 relative;
+
+      overflow-y: auto;
+      vertical-align: middle;
+      height: 5.7rem;
+    }
+
+    &-referal {
+      @apply border-t;
+    }
+
+    &-type {
+      @apply border-t;
+    }
+  }
+}

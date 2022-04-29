@@ -1,0 +1,38 @@
+.container-dropzone {
+  @apply mb-10 flex flex-col p-6 shadow-mini;
+
+  width: 100%;
+  min-height: 15.625rem;
+
+  .dropzone {
+    @apply rounded-lg w-full flex items-center justify-center cursor-pointer;
+
+    width: calc(100%);
+    height: 12.563rem;
+    background: #edeeef;
+  }
+}
+
+.exam-results {
+  @apply flex items-center mb-10 shadow-mini;
+
+  width: 100%;
+  height: 7.25rem;
+}
+
+.exam-card {
+  @apply w-full mb-10 mt-5 grid grid-cols-1 2xl:grid-cols-2  shadow-mini;
+}
+
+.time-select-button {
+  @apply rounded  ml-12 mt-3 relative text-10px;
+
+  width: 135px;
+  height: 30px;
+  color: #2e72d2;
+  border: 1px solid rgb(24 144 255 / 48%);
+
+  &_active {
+    background: rgb(24 144 255 / 8%);
+  }
+}

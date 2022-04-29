@@ -1,0 +1,81 @@
+.prog-card {
+  width: 230px;
+  height: 100px;
+  border-radius: 16px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  &_shadow {
+    box-shadow: 4px 10px 24px 4px rgba(34, 60, 80, 0.15);
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    position: relative;
+    padding-top: 5px;
+
+    &_opinion {
+      height: 12px;
+      position: relative;
+      top: 6px;
+      width: 4px;
+      margin-right: 3px;
+
+      &_1 {
+        background: #f53031;
+      }
+
+      &_2 {
+        background: #f2994a;
+      }
+
+      &_3 {
+        background: #fbd036;
+      }
+
+      &_4 {
+        background: #4eda7e;
+      }
+
+      &_none {
+        background: #b2b2be;
+      }
+    }
+
+    &_optn {
+      margin-left: 50px;
+      position: absolute;
+      //bottom: 5px;
+
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    &_text {
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      bottom: 2px;
+
+      h5 {
+        font-size: 12px;
+        line-height: 16px;
+        color: #919eab;
+      }
+
+      p {
+        color: #212b36;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}

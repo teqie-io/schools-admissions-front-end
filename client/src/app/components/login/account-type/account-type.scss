@@ -1,0 +1,114 @@
+.account-type {
+  transition: 0.3s ease-in-out;
+  background-color: #faf7f5;
+
+  .box {
+    @apply rounded-2xl shadow-light bg-white pl-12 transition-all;
+
+    padding-top: 3.125rem;
+    width: 58.25rem;
+    min-height: 34.625rem;
+
+    h1 {
+      font-family: Arial, sans-serif;
+    }
+
+    &-link {
+      @apply border-light border rounded mb-5 flex items-center;
+
+      width: 27.688rem;
+      height: 5.875rem;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &-submit {
+      @apply rounded text-white font-medium justify-center mt-5 mb-3 flex items-center;
+
+      background: #04297a;
+      width: 27.688rem;
+      height: 3rem;
+
+      &:after {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+    }
+
+    &-signin {
+      @apply rounded-lg mb-5 flex items-center justify-center;
+
+      border: 0.031rem solid #e7eaee;
+      width: 27.688rem;
+      height: 2.375rem;
+
+      &:after {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+
+      img {
+        @apply pr-2 relative;
+      }
+    }
+
+    &-input {
+      @apply block p-2.5 pl-5 pr-5 mb-4 text-xl appearance-none rounded-lg bg-transparent;
+
+      width: 27.688rem;
+      height: 3.5rem;
+      border: 0.063rem solid rgba(145, 158, 171, 0.32);
+      box-sizing: border-box;
+
+      &:hover {
+        @apply border-main-blue;
+      }
+
+      &:hover ~ .box-input_label {
+        @apply text-main-blue;
+      }
+
+      &:focus {
+        @apply outline-none border-main-blue;
+      }
+
+      &:focus ~ .box-input_label {
+        @apply text-main-blue;
+      }
+
+      &_label {
+        @apply absolute top-0 text-button-disable bg-white transform -translate-y-3 -translate-x-3 scale-75 z-0 ml-2 px-1 py-0;
+      }
+
+      &__pass {
+        @apply pr-20;
+      }
+    }
+
+    .error {
+      @apply rounded-lg;
+
+      border: 0.125rem solid #ff4842;
+      box-sizing: border-box;
+    }
+
+    .error ~ .box-input_label {
+      color: #ff4842;
+    }
+
+    .span-line {
+      background: rgba(145, 158, 171, 0.24);
+      height: 0.063rem;
+      width: 11.938rem;
+    }
+
+    .dodles {
+      @apply ml-16 relative bottom-5;
+
+      width: 20.563rem;
+      height: 19.25rem;
+    }
+  }
+}

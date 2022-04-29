@@ -1,0 +1,38 @@
+.editor-container {
+  @apply flex flex-col mb-5 rounded-lg border relative items-center;
+
+  width: 45rem;
+  height: 22.5rem;
+
+  .sun-editor {
+    border: none;
+
+    .se-btn-module-border {
+      border: none;
+    }
+
+    .se-btn-tool-font,
+    .se-btn-tool-size {
+      color: #919eab;
+    }
+
+    .se-toolbar,
+    .sun-editor-common {
+      @apply border rounded-lg;
+
+      outline: none;
+    }
+  }
+}
+
+.preview-content {
+  min-height: 5rem;
+}
+
+.editor-subject {
+  @apply flex text-base pl-4 flex-col mb-5 rounded-lg border relative items-center;
+
+  color: #919eab;
+  width: 45rem;
+  height: 3.5rem;
+}

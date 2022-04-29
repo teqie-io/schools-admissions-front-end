@@ -1,0 +1,15 @@
+.header-navlink {
+  @apply h-16 pr-3 flex items-center bg-white;
+
+  &-link {
+    @apply flex mr-4 text-third-gray cursor-pointer;
+
+    img {
+      @apply mr-4;
+    }
+
+    &_active {
+      @apply text-main-black;
+    }
+  }
+}

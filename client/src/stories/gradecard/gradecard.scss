@@ -1,0 +1,21 @@
+.prod-card-section {
+  @apply w-56 h-20 relative flex justify-between ml-5 rounded-2xl shadow-grade;
+
+  top: 2.125rem;
+
+  &_text {
+    @apply mt-5 relative ml-4 mr-4;
+
+    bottom: 0.125rem;
+
+    h5 {
+      @apply text-xs leading-4 font-semibold mb-2;
+
+      letter-spacing: 0.063rem;
+    }
+
+    p {
+      @apply flex font-medium items-center text-xs mb-2;
+    }
+  }
+}

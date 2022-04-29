@@ -1,0 +1,543 @@
+import { Meta, Preview } from '@storybook/addon-docs'
+
+<Meta title='Design Tokens/Typography' />
+
+# Typography
+
+## Font Family
+
+We use only [Inter](https://fonts.google.com/specimen/Inter).
+
+<table>
+  <thead>
+    <tr>
+      <th>token</th>
+      <th>CSS class</th>
+      <th>CSS custom property</th>
+      <th>value</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>sans</td>
+    <td>
+      <code>.font-sans</code>
+    </td>
+    <td>
+      <code>--family-sans</code>
+    </td>
+    <td>'Inter', sans-serif</td>
+    <td>
+      <Preview>
+        <div class='font-sans'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+</table>
+
+## Weight
+
+Our primary font family supports only several weight values.
+
+<table>
+  <thead>
+    <tr>
+      <th>token</th>
+      <th>CSS class</th>
+      <th>CSS custom property</th>
+      <th>value</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>thin</td>
+    <td>
+      <code>.font-thin</code>
+    </td>
+    <td>
+      <code>--weight-thin</code>
+    </td>
+    <td>100</td>
+    <td>
+      <Preview>
+        <div class='font-thin'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>light</td>
+    <td>
+      <code>.font-light</code>
+    </td>
+    <td>
+      <code>--weight-light</code>
+    </td>
+    <td>300</td>
+    <td>
+      <Preview>
+        <div class='font-light'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td>
+      <code>.font-normal</code>
+    </td>
+    <td>
+      <code>--weight-normal</code>
+    </td>
+    <td>400</td>
+    <td>
+      <Preview>
+        <div class='font-normal'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>
+      <code>.font-medium</code>
+    </td>
+    <td>
+      <code>--weight-medium</code>
+    </td>
+    <td>500</td>
+    <td>
+      <Preview>
+        <div class='font-medium'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>font-semibold</td>
+    <td>
+      <code>.font-semibold</code>
+    </td>
+    <td>
+      <code>--weight-semibold</code>
+    </td>
+    <td>600</td>
+    <td>
+      <Preview>
+        <div class='font-semibold'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>bold</td>
+    <td>
+      <code>.font-bold</code>
+    </td>
+    <td>
+      <code>--weight-bold</code>
+    </td>
+    <td>700</td>
+    <td>
+      <Preview>
+        <div class='font-bold'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>font-extrabold</td>
+    <td>
+      <code>.font-extrabold</code>
+    </td>
+    <td>
+      <code>--weight-extrabold</code>
+    </td>
+    <td>800</td>
+    <td>
+      <Preview>
+        <div class='font-extrabold'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+</table>
+
+## Size
+
+<table>
+  <thead>
+    <tr>
+      <th>token</th>
+      <th>CSS class</th>
+      <th>CSS custom property</th>
+      <th>value</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>10px</td>
+    <td>
+      <code>.text-10px</code>
+    </td>
+    <td>
+      <code>--size-10px</code>
+    </td>
+    <td>0.625rem</td>
+    <td>
+      <Preview>
+        <div class='text-10px'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>xs</td>
+    <td>
+      <code>.text-xs</code>
+    </td>
+    <td>
+      <code>--size-xs</code>
+    </td>
+    <td>0.75rem</td>
+    <td>
+      <Preview>
+        <div class='text-xs'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>13px</td>
+    <td>
+      <code>.text-13px</code>
+    </td>
+    <td>
+      <code>--size-13px</code>
+    </td>
+    <td>0.813rem</td>
+    <td>
+      <Preview>
+        <div class='text-13px'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>sm</td>
+    <td>
+      <code>.text-sm</code>
+    </td>
+    <td>
+      <code>--size-sm</code>
+    </td>
+    <td>0.875rem</td>
+    <td>
+      <Preview>
+        <div class='text-sm'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>base</td>
+    <td>
+      <code>.text-base</code>
+    </td>
+    <td>
+      <code>--size-base</code>
+    </td>
+    <td>1rem</td>
+    <td>
+      <Preview>
+        <div class='text-base'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>lg</td>
+    <td>
+      <code>.text-lg</code>
+    </td>
+    <td>
+      <code>--size-lg</code>
+    </td>
+    <td>1.125rem</td>
+    <td>
+      <Preview>
+        <div class='text-lg'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>xl</td>
+    <td>
+      <code>.text-xl</code>
+    </td>
+    <td>
+      <code>--size-xl</code>
+    </td>
+    <td>1.25rem</td>
+    <td>
+      <Preview>
+        <div class='text-xl'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>2xl</td>
+    <td>
+      <code>.text-2xl</code>
+    </td>
+    <td>
+      <code>--size-2xl</code>
+    </td>
+    <td>1.5rem</td>
+    <td>
+      <Preview>
+        <div class='text-2xl'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>3xl</td>
+    <td>
+      <code>.text-3xl</code>
+    </td>
+    <td>
+      <code>--size-3xl</code>
+    </td>
+    <td>1.875rem</td>
+    <td>
+      <Preview>
+        <div class='text-3xl'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>4xl</td>
+    <td>
+      <code>.text-4xl</code>
+    </td>
+    <td>
+      <code>--size-4xl</code>
+    </td>
+    <td>2.25rem</td>
+    <td>
+      <Preview>
+        <div class='text-4xl'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+</table>
+
+## Classes
+
+<table>
+  <thead>
+    <tr>
+      <th>CSS class</th>
+      <th>value</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>
+      <code>.subtitle1</code>
+    </td>
+    <td>
+      font-size: 1rem;
+      <br />
+      font-weight: 600;
+      <br />
+      line-height: 1.5rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='subtitle1'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.subtitle2</code>
+    </td>
+    <td>
+      font-size: 0.875rem;
+      <br />
+      font-weight: 600;
+      <br />
+      line-height: 1.375rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='subtitle2'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.body1</code>
+    </td>
+    <td>
+      font-size: 1rem;
+      <br />
+      font-weight: 400;
+      <br />
+      line-height: 1.5rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='body1'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.body2</code>
+    </td>
+    <td>
+      font-size: 0.875rem;
+      <br />
+      font-weight: 400;
+      <br />
+      line-height: 1.375rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='body2'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.buttonLg</code>
+    </td>
+    <td>
+      font-size: 0.938rem;
+      <br />
+      font-weight: 700;
+      <br />
+      line-height: 1.625rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='buttonLg'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.buttonMd</code>
+    </td>
+    <td>
+      font-size: 0.875rem;
+      <br />
+      font-weight: 700;
+      <br />
+      line-height: 1.5rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='buttonMd'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.buttonSm</code>
+    </td>
+    <td>
+      font-size: 0.813rem;
+      <br />
+      font-weight: 700;
+      <br />
+      line-height: 1.375rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='buttonSm'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.Caption</code>
+    </td>
+    <td>
+      font-size: 0.75rem;
+      <br />
+      font-weight: 400;
+      <br />
+      line-height: 1.125rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='Caption'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>.Overline</code>
+    </td>
+    <td>
+      font-size: 0.75rem;
+      <br />
+      font-weight: 700;
+      <br />
+      line-height: 1.125rem;
+    </td>
+    <td>
+      <Preview>
+        <div class='Overline'>Lorem ipsum dolor sit amet.</div>
+      </Preview>
+    </td>
+  </tr>
+</table>
+
+## Usage classes
+
+<Preview isColumn isExpanded>
+  <p class='Caption'>Heading 1</p>
+  <label class='buttonSm'>Heading 2</label>
+  <span class='body1'>Heading 3</span>
+</Preview>
+
+## Regular Text
+
+<Preview>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat ex, quod exercitationem doloribus omnis
+    voluptates, impedit atque expedita inventore ut pariatur repudiandae quia eum cupiditate accusantium dolorem eos
+    excepturi?
+  </p>
+</Preview>
+
+## Headings
+
+<Preview isColumn isExpanded>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</Preview>
+
+Use utility classes to redefine sizes or if the usage of associated HTML element is not appropriate:
+
+<Preview isColumn isExpanded>
+  <h1 class='h1'>Heading 1</h1>
+  <h2 class='h1'>Heading 2</h2>
+  <h3 class='h1'>Heading 3</h3>
+  <h4 class='h1'>Heading 4</h4>
+  <h5 class='h1'>Heading 5</h5>
+  <h6 class='h1'>Heading 6</h6>
+</Preview>
+
+<Preview isColumn isExpanded>
+  <p class='h1'>Heading 1</p>
+  <p class='h2'>Heading 2</p>
+  <p class='h3'>Heading 3</p>
+  <p class='h4'>Heading 4</p>
+  <p class='h5'>Heading 5</p>
+  <p class='h6'>Heading 6</p>
+</Preview>
+
+All elements have text-base/font-normal size
+
+<Preview isColumn isExpanded>
+  <p>Heading 1</p>
+  <label>Heading 2</label>
+  <span>Heading 3</span>
+</Preview>

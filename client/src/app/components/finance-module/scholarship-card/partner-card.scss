@@ -1,0 +1,34 @@
+.partner-card {
+  @apply rounded-lg mb-8 ml-2 pl-12 mr-8 pt-6 shadow-scholarship-card;
+
+  width: 20.938rem;
+  height: 9.375rem;
+
+  span {
+    @apply text-gray-500;
+  }
+
+  &-row {
+    @apply flex justify-between;
+
+    &_fix {
+      margin-top: 0.438rem;
+    }
+  }
+
+  &-add {
+    @apply flex items-center justify-center flex-col pr-12 pb-9 cursor-pointer text-gray-500 select-none;
+
+    span {
+      @apply font-semibold;
+    }
+  }
+
+  &-input {
+    @apply pr-8;
+  }
+
+  &-fix {
+    right: 0.594rem;
+  }
+}

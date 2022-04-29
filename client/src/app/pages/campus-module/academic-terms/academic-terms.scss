@@ -1,0 +1,79 @@
+.academ-terms {
+  @apply mt-20 mb-8 overflow-x-hidden;
+
+  transition: 0.1s ease-out;
+
+  &-header {
+    @apply flex right-0 mr-4 absolute;
+
+    top: 12.5rem;
+
+    &_sort {
+      @apply h-9 w-9 flex justify-center items-center mr-4 border border-main-gray;
+
+      button {
+        outline: none;
+      }
+
+      .animate-sort {
+        transition: 0.3s;
+
+        &_on {
+          transition: 0.3s;
+          transform: rotateX(180deg);
+        }
+      }
+    }
+  }
+
+  &-card {
+    &_text {
+      @apply text-lg pl-2 pb-3 pt-2;
+    }
+
+    &_row {
+      @apply mb-5 flex items-center justify-between;
+      transition: 0.1s ease-out;
+
+      &_full {
+        width: calc(100vw - 21rem);
+      }
+
+      &_min {
+        width: calc(100vw - 11.125rem);
+      }
+
+      button {
+        @apply relative;
+      }
+
+      .term-box {
+        @apply text-white w-80 pl-8 pt-2 pb-2 ml-1 rounded-md;
+
+        &_name {
+          @apply text-sm font-bold leading-18px;
+        }
+
+        &_date {
+          @apply text-sm leading-18px;
+        }
+
+        &_0 {
+          background: linear-gradient(to right, #008060 80%, #00e6ac 70%);
+        }
+
+        &_1 {
+          background: linear-gradient(to right, #1890ff 80%, #d0f2ff 70%);
+        }
+
+        &_2 {
+          background: linear-gradient(to right, #ffc107 80%, #fff7cd 70%);
+        }
+
+        &_3 {
+          background: linear-gradient(to right, #008060 80%, #00e6ac 70%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.appointments {
+  @apply mb-7 rounded-2xl w-full shadow-standart;
+
+  transition: 0.2s ease-out;
+  height: 23.188rem;
+  padding: 0.75rem;
+
+  &-title {
+    @apply font-semibold text-xl ml-7 mt-5 mb-3;
+  }
+
+  &-user {
+    @apply flex justify-between items-center;
+
+    padding: 0.625rem;
+
+    &-info {
+      @apply flex;
+    }
+
+    &__img-wrapper {
+      @apply relative;
+
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.438rem;
+      border-radius: 50%;
+      background-color: rgb(128 128 128 / 40.1%);
+
+      img {
+        @apply absolute top-0 left-0 object-contain object-center;
+      }
+    }
+
+    &__name {
+      @apply font-medium text-sm text-main-black;
+
+      line-height: 1.375rem;
+    }
+
+    &__date {
+      @apply font-medium text-xs text-second-gray;
+
+      margin-right: 0.25rem;
+      line-height: 1.125rem;
+    }
+
+    &__status {
+      @apply rounded-md font-bold text-xs;
+
+      padding: 0 0.5rem 0.125rem;
+      line-height: 1.25rem;
+
+      &_confirmed {
+        background: #00806029;
+        color: #00664d;
+      }
+
+      &_canceled {
+        color: #b72136;
+        background-color: #ff484229;
+      }
+
+      &_call-to-confirm {
+        color: #b78103;
+        background-color: #ffc10729;
+      }
+    }
+
+    &-actions {
+      @apply flex items-center;
+
+      &__call-btn {
+        margin-right: 0.813rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .appointments {
+    width: calc(100% + 33px);
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .appointments {
+    width: calc(100%);
+  }
+}

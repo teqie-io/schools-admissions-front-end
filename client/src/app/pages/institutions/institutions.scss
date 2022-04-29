@@ -1,0 +1,35 @@
+.institutions {
+  @apply pt-14 flex flex-col relative;
+
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  &-box {
+    @apply flex items-center flex-col justify-center relative;
+
+    height: 55vh;
+  }
+
+  &-modal {
+    @apply flex bg-white transition-all absolute top-0 -left-9 text-main-black;
+
+    width: 90vw;
+
+    &_result {
+      @apply flex relative flex-col mt-24;
+
+      width: 11.625rem;
+      height: 21.875rem;
+    }
+  }
+}
+
+.none-after::after {
+  content: none;
+}
+
+.medium-after::after {
+  width: 0.7rem;
+  height: 0.7rem;
+}

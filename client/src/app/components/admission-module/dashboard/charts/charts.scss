@@ -1,0 +1,20 @@
+.charts {
+  @apply flex justify-around flex-col w-full rounded-2xl shadow-standart;
+
+  height: 32.5rem;
+
+  // width: 50rem;
+  transition: 0.2s ease;
+}
+
+#chart {
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1555px) {
+  .charts {
+    @apply flex justify-around flex-col rounded-2xl shadow-standart;
+
+    height: 32.5rem;
+  }
+}

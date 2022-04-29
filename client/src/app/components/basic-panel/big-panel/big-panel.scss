@@ -1,0 +1,98 @@
+.basic-panel {
+  @apply h-screen flex flex-col pl-3 fixed bg-white w-60 border-r border-main-gray;
+
+  z-index: 999;
+
+  &-logo {
+    @apply ml-4 h-12 rounded-full justify-between items-center flex mt-1.5 mb-3;
+
+    &_img {
+      @apply cursor-pointer;
+    }
+  }
+
+  &-info {
+    @apply w-36 text-white  ml-1;
+
+    p {
+      @apply text-sm font-medium leading-4;
+    }
+  }
+
+  &-menu {
+    @apply mb-3 flex h-20 pl-12 justify-around items-center rounded-18px;
+
+    width: 13.438rem;
+
+    &_campus {
+      background: rgba(0, 171, 85, 0.1);
+    }
+
+    &_profile {
+      @apply bg-main-white cursor-pointer;
+    }
+
+    &_text {
+      @apply select-none;
+
+      white-space: nowrap;
+
+      &-start {
+        @apply text-sm text-main-black not-italic mr-12 font-bold leading-4 items-center tracking-normal flex text-left;
+
+        h2 {
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 8.4rem;
+        }
+      }
+
+      &-end {
+        @apply text-sm flex  items-center text-second-gray;
+      }
+    }
+
+    &_avatar {
+      @apply inline-block ml-1 mr-3 h-10 w-10 rounded-full;
+    }
+
+    &_avatar_campus {
+      @apply inline-block ml-1 mr-2 h-8 w-8 rounded-full;
+    }
+
+    &_triangle {
+      @apply h-1.5 w-2.5 mr-2 relative bg-main-black;
+
+      left: 0.313rem;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+  }
+}
+
+.basic-panel-closed {
+  @apply hidden fixed top-0 left-0;
+
+  width: 99vw;
+  height: 100vh;
+
+  &_linear {
+    @apply hidden;
+
+    background: linear-gradient(75deg, rgba(22, 28, 36, 0.48) 0%, rgb(22, 28, 36) 100%);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .basic-panel {
+    @apply h-screen flex flex-col pl-3 fixed bg-white z-10 w-60 border-r border-main-gray;
+  }
+
+  .basic-panel-closed {
+    &_linear {
+      @apply block;
+
+      background: linear-gradient(75deg, rgba(22, 28, 36, 0.48) 0%, rgb(22, 28, 36) 100%);
+    }
+  }
+}

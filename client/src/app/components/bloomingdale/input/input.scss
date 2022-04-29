@@ -1,0 +1,21 @@
+.bloom-input {
+  @apply mb-2 select-none;
+  font-family: 'Poppins';
+  label {
+    @apply inline-block mb-2 text-xs font-semibold;
+  }
+  input {
+    @apply block w-full text-gray-400 text-xs;
+    border: 1px solid #e8e8f4;
+    padding: 0.5rem 0.7rem;
+    transition: 0.2s linear;
+    &::placeholder {
+      @apply text-gray-400;
+
+      font-family: inherit;
+    }
+    &:focus {
+      @apply border-blue-500;
+    }
+  }
+}

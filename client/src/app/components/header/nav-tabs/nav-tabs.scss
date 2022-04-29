@@ -1,0 +1,13 @@
+.header-tabs {
+  @apply h-16;
+
+  &-link {
+    @apply pt-5 pb-5 mr-5 text-main-black;
+
+    transition: 0.1s ease-in-out;
+
+    &_active {
+      @apply border-b-2 border-main-blue;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.container-verifiction {
+  @apply flex relative justify-between;
+
+  &_input {
+    @apply absolute top-0 opacity-0;
+
+    //  top: 0;
+    //  opacity: 0;
+  }
+
+  &_item {
+    @apply p-0 rounded text-2xl font-extrabold text-center;
+
+    border: 0;
+    box-shadow: inset 0rem 0rem 0rem 0.063rem #ccc;
+    transition: box-shadow 0.2s ease-out;
+
+    &.is-active {
+      box-shadow: inset 0rem 0rem 0rem 0.125rem #888;
+    }
+  }
+}

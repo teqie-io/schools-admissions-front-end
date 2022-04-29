@@ -1,0 +1,49 @@
+.program-classes {
+  @apply mt-20 mb-8;
+
+  transition: 0.1s ease-out;
+
+  .table {
+    @apply relative;
+    top: 8.75rem;
+    right: 2.188rem;
+  }
+
+  .classes {
+    @apply flex relative justify-around;
+
+    top: 1.563rem;
+    right: 0.313rem;
+
+    &_row {
+      @apply flex flex-col;
+
+      justify-content: space-evenly;
+
+      h4 {
+        @apply text-black font-semibold text-base  leading-7;
+      }
+
+      h3 {
+        @apply font-medium text-third-gray  leading-7;
+        font-size: 0.813rem;
+      }
+    }
+  }
+
+  .pre-classes {
+    @apply h-24 flex flex-col justify-center items-center mr-4 pt-12;
+
+    h3 {
+      @apply font-semibold text-lg;
+    }
+
+    h4 {
+      @apply text-black font-semibold text-lg pt-4;
+
+      span {
+        @apply font-medium text-sm text-third-gray;
+      }
+    }
+  }
+}

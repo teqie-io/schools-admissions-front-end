@@ -1,0 +1,32 @@
+.bloom-cabinet {
+  @apply text-gray-900;
+  font-family: 'Poppins';
+  padding: 2.6rem 3.2rem;
+  &-admissions {
+    @apply mb-8;
+
+    &_list {
+      @apply flex items-center;
+      column-gap: 1.5rem;
+    }
+    &_btn {
+      @apply flex flex-col items-center justify-center w-40 h-20 text-blue-700 font-extrabold text-xs capitalize;
+      row-gap: 0.875rem;
+      border: 1px dashed rgba($color: #ddd, $alpha: 0.8);
+      transition: 0.2s ease-in-out;
+      span {
+        @apply inline-flex items-center justify-center w-4 h-4 text-white bg-blue-700;
+        font-weight: 300;
+        border-radius: 50%;
+      }
+      &:hover {
+        background: rgba($color: #1d4ed8, $alpha: 0.05);
+      }
+    }
+  }
+
+  &_title {
+    @apply font-semibold text-xs mb-8;
+    letter-spacing: 0.8px;
+  }
+}

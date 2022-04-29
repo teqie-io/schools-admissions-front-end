@@ -1,0 +1,25 @@
+.admissions-links {
+  @apply flex text-second-gray text-sm items-center border-b-2 border-white;
+
+  height: 3rem;
+
+  &_active {
+    @apply text-main-black border-b-2 border-second-blue;
+  }
+
+  &:focus:not(:active)::after {
+    animation: none;
+  }
+
+  &:after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .admissions-links {
+    @apply text-xs;
+
+    height: 2.5rem;
+  }
+}

@@ -1,0 +1,32 @@
+.date_details {
+  @apply w-80;
+
+  padding: 1.25rem 4.563rem 2.594rem 2.5rem;
+  background-color: #1611da;
+  color: #f1f2f3;
+  border-radius: 1rem;
+
+  &-date {
+    padding-bottom: 0.688rem;
+  }
+
+  &-date,
+  &-time {
+    .date_details-text {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.75rem;
+      letter-spacing: 0;
+    }
+
+    .date_details-schedule {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.75rem;
+      letter-spacing: 0;
+      width: 13.375rem;
+    }
+  }
+}

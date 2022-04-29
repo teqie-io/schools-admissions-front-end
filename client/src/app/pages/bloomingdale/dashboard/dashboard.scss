@@ -1,0 +1,28 @@
+.applicant-details {
+  @apply mb-10 rounded-br-lg rounded-bl-lg shadow-lg;
+
+  width: calc(100% + 130px);
+  height: 421px;
+
+  &-header {
+    @apply w-full text-sm font-semibold justify-between flex items-center pl-10 pr-10;
+
+    height: 100px;
+    background-color: #fbfbe6;
+  }
+}
+
+.applicant-notification {
+  @apply rounded-xl relative justify-center flex items-center;
+
+  background-color: #ecf5f0;
+  width: calc(100% + 130px);
+  height: 190px;
+}
+
+.application-checklist {
+  @apply rounded-br-lg p-10 rounded-bl-lg shadow-lg;
+
+  width: calc(100% - 185px);
+  height: 387px;
+}

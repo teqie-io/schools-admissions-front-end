@@ -1,0 +1,35 @@
+.application-panel {
+  @apply pt-6 flex fixed top-0 right-0 flex-col items-center mt-14 border-l bg-white border-main-gray;
+
+  z-index: 20;
+  width: 4.625rem;
+  height: 100vh;
+
+  &-closed {
+    @apply right-0 absolute -top-14 w-screen h-screen;
+  }
+
+  &-button {
+    @apply w-10 h-10 flex items-center justify-center rounded-lg mb-7;
+  }
+
+  &-label {
+    @apply rounded-full w-6 h-5 absolute font-bold text-white flex items-center justify-center text-10px;
+  }
+
+  .windows-field {
+    @apply absolute top-0 bg-white shadow-main-card;
+
+    right: 4.625rem;
+    width: 24.188rem;
+    height: 100vh;
+
+    .maincard {
+      @apply flex flex-col mb-3 justify-center pl-5 shadow-standart;
+
+      width: 21.313rem;
+      height: 5.625rem;
+      border-radius: 0.25rem;
+    }
+  }
+}

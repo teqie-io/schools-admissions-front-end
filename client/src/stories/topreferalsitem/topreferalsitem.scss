@@ -1,0 +1,26 @@
+.top-referals-item {
+  @apply flex items-center min-w-full;
+
+  &_avatar {
+    @apply w-10 h-10 object-cover mr-3.5;
+
+    border-radius: 50%;
+  }
+
+  &_column {
+    @apply flex justify-start flex-col;
+  }
+
+  &_name {
+    @apply font-medium text-sm;
+
+    color: #212b36;
+  }
+
+  &_achievement {
+    @apply block font-medium text-xs pl-4 select-none;
+
+    color: #637381;
+    background: url('../../app/static/image/hearth.svg') no-repeat 0 50%;
+  }
+}

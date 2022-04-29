@@ -1,0 +1,25 @@
+.upload-btn {
+  input {
+    @apply hidden;
+
+    &:disabled {
+      + label {
+        @apply opacity-70 pointer-events-none;
+      }
+    }
+  }
+
+  label {
+    @apply text-white inline-flex items-center justify-center rounded-lg py-1.5 px-4 cursor-pointer relative overflow-hidden;
+
+    background-color: #404eed;
+
+    img {
+      @apply mr-2;
+    }
+
+    &:hover {
+      background: rgba(64, 78, 237, 0.9);
+    }
+  }
+}

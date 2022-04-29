@@ -1,0 +1,19 @@
+.enqur-card {
+  @apply rounded-2xl flex flex-col justify-between pt-4 pb-2 pl-3  mb-2.5 shadow-standart;
+
+  width: 13.75rem;
+  height: 4.938rem;
+  margin-top: 0.68rem;
+
+  h2 {
+    color: rgb(0 0 0 / 60%);
+  }
+
+  &-points {
+    @apply text-xs flex items-center text-second-gray;
+  }
+}
+
+.trending-rotate {
+  transform: rotateX(180deg);
+}
